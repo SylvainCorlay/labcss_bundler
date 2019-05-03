@@ -1,0 +1,33 @@
+{
+  "name": "nbconvert_labcss",
+  "version": "0.0.1",
+  "description": "CSS bundle for the JupyterLab nbconvert template",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "Jupyter"
+  ],
+  "author": "Sylvain Corlay",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@jupyterlab/apputils": "^0.19.1",
+    "@jupyterlab/cells": "^0.19.1",
+    "@jupyterlab/codemirror": "1.0.0-alpha.6",
+    "@jupyterlab/notebook": "1.0.0-alpha.7",
+    "@jupyterlab/outputarea": "^0.19.1",
+    "@jupyterlab/rendermime": "1.0.0-alpha.6",
+    "@jupyterlab/theme-light-extension": "1.0.0-alpha.6",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "rimraf": "^2.6.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
